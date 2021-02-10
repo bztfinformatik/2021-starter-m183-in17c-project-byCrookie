@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "92d7ba0a-2df7-4b45-8447-c721de6a62a2",
+		"name": "endpoints-forum-db-up",
+		"description": "Unitests for api-endpoints of playground forum backend.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get-users-by-ids - localhost:3000/users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GET /users - by ids - status\", () => {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"const res = pm.response.json();",
+							"const user3 = res.find(item => item.username == pm.environment.get(\"user_3_username\"));",
+							"const user5 = res.find(item => item.username == pm.environment.get(\"user_5_username\"));",
+							"pm.test(\"GET /users - by ids - response\", () => {",
+							"  pm.expect(user3.username).to.eql(pm.environment.get(\"user_3_username\"));",
+							"  pm.expect(user3.firstname).to.eql(pm.environment.get(\"user_3_firstname\"));",
+							"  pm.expect(user3.lastname).to.eql(pm.environment.get(\"user_3_lastname\"));",
+							"  pm.expect(user3.avatar).to.eql(pm.environment.get(\"user_3_avatar\"));",
+							"  pm.expect(user5.username).to.eql(pm.environment.get(\"user_5_username\"));",
+							"  pm.expect(user5.firstname).to.eql(pm.environment.get(\"user_5_firstname\"));",
+							"  pm.expect(user5.lastname).to.eql(pm.environment.get(\"user_5_lastname\"));",
+							"  pm.expect(user5.avatar).to.eql(pm.environment.get(\"user_5_avatar\"));",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users/28,30",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"28,30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-users-by-invalid-id - localhost:3000/users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GET /users - by nvalid id - status\", () => {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"const res = pm.response.json();",
+							"pm.test(\"GET /users - by invalid ids - response\", () => {",
+							"  pm.expect(res).to.be.empty;",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users/0",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filter-users-by-unkown-column - localhost:3000/users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GET /users - filter by invalid column name - status\", () => {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"const res = pm.response.json();",
+							"pm.test(\"GET /users - filter invalid column name - response\", () => {",
+							"  pm.expect(res).to.be.empty;",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users?rubish={{user_1_firstname}}",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "rubish",
+							"value": "{{user_1_firstname}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filter-valid-user - localhost:3000/users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GET /users - filter valid user - status\", () => {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"const res = pm.response.json();",
+							"const user1 = res.find(item => item.username == \"gbo@oonet.com\");",
+							"pm.test(\"GET /users - filter valid user - response\", () => {",
+							"  //pm.expect(user1.username).to.eql(pm.environment.get(\"user_1_username\"));",
+							"  pm.expect(user1.firstname).to.eql(pm.environment.get(\"user_1_firstname\"));",
+							"  pm.expect(user1.lastname).to.eql(pm.environment.get(\"user_1_lastname\"));",
+							"  pm.expect(user1.avatar).to.eql(pm.environment.get(\"user_1_avatar\"));",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users?firstname={{user_1_firstname}}&lastname={{user_1_lastname}}",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "{{user_1_firstname}}"
+						},
+						{
+							"key": "lastname",
+							"value": "{{user_1_lastname}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

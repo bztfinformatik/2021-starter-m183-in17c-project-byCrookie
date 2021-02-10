@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "39df6f50-5bcb-425d-8ad3-1dad71a73b0b",
+		"name": "endpoints-db-down",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "db-down - localhost:3000/users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f4da6064-43a9-4cb1-88bf-c81eea512cb0",
+						"exec": [
+							"pm.test(\"/users - status\", () => {",
+							"    pm.response.to.have.status(500);",
+							"});",
+							"const body = pm.environment.get(\"connection-error\");",
+							"pm.test(\"/users - body\", () => {",
+							"  pm.response.to.have.body(body);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

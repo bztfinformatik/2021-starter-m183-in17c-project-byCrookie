@@ -1,0 +1,14 @@
+exports.ISO8601 = '%Y-%m-%dT%T';
+
+exports.JWTSECTRET = 'rumpelstilzchen2.0';
+exports.JWTEXPIRATION = '1h';
+
+
+exports.ERR_DB_DUP_ENTRY = 1062;
+exports.ERR_DB_UNKONW_COLUMN = 1054;
+
+exports.HTTP_STATUS_OK = 200;
+exports.HTTP_STATUS_CREATED = 201;
+exports.HTTP_STATUS_UNAUTHORIZED = 401;
+exports.HTTP_STATUS_CONFLICT = 409;
+exports.HTTP_STATUS_INETERNAL_SERVER_ERROR = 500;
