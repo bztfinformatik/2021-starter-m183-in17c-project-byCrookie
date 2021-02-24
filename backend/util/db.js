@@ -10,14 +10,25 @@ const connectionPool = mysql.createPool({
 
 async function execute(sql, values, connection) {
   const formatedSql = connection.format(sql, values);
-  const result = await connection.execute(formatedSql);
-  logger.debug({
-    sql: sql,
-    values: values,
-    query: formatedSql,
-    result: result[0]
-  });
-  return result;
+  try {
+    const result = await connection.execute(formatedSql);
+    logger.debug({
+      sql: sql,
+      values: values,
+      query: formatedSql,
+      result: result[0]
+    });
+    return result;
+  } catch (err) {
+    logger.error({
+      sql: sql,
+      values: values,
+      query: formatedSql,
+      message: err.message,
+      stack: err.stack
+    });
+    throw err;
+  }
 }
 
 async function get(stmt) {

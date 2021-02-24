@@ -1,0 +1,32 @@
+{
+  sql: 'select *a from user',
+  values: [],
+  query: 'select *a from user',
+  message: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1",
+  stack: "Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1\n" +
+    '    at PromisePool.execute (C:\\Development\\Schule\\M183\\2021-starter-m183-in17c-project-byCrookie\\backend\\node_modules\\mysql2\\promise.js:358:22)\n' +
+    '    at execute (C:\\Development\\Schule\\M183\\2021-starter-m183-in17c-project-byCrookie\\backend\\util\\db.js:14:37)\n' +
+    '    at Object.get (C:\\Development\\Schule\\M183\\2021-starter-m183-in17c-project-byCrookie\\backend\\util\\db.js:40:20)\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n' +
+    '    at async Function.getByIds (C:\\Development\\Schule\\M183\\2021-starter-m183-in17c-project-byCrookie\\backend\\models\\user.js:65:20)\n' +
+    '    at async exports.getUsers (C:\\Development\\Schule\\M183\\2021-starter-m183-in17c-project-byCrookie\\backend\\controllers\\main.js:31:16)',
+  level: 'error',
+  timestamp: '2021-02-24T10:32:38.891Z'
+}
+{
+  message: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1",
+  stack: "Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1\n" +
+    '    at PromisePool.execute (C:\\Development\\Schule\\M183\\2021-starter-m183-in17c-project-byCrookie\\backend\\node_modules\\mysql2\\promise.js:358:22)\n' +
+    '    at execute (C:\\Development\\Schule\\M183\\2021-starter-m183-in17c-project-byCrookie\\backend\\util\\db.js:14:37)\n' +
+    '    at Object.get (C:\\Development\\Schule\\M183\\2021-starter-m183-in17c-project-byCrookie\\backend\\util\\db.js:40:20)\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n' +
+    '    at async Function.getByIds (C:\\Development\\Schule\\M183\\2021-starter-m183-in17c-project-byCrookie\\backend\\models\\user.js:65:20)\n' +
+    '    at async exports.getUsers (C:\\Development\\Schule\\M183\\2021-starter-m183-in17c-project-byCrookie\\backend\\controllers\\main.js:31:16)',
+  level: 'error',
+  timestamp: '2021-02-24T10:32:38.915Z'
+}
+{
+  message: '/favicon.ico not found. Redirect to /',
+  level: 'warn',
+  timestamp: '2021-02-24T10:32:39.348Z'
+}

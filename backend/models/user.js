@@ -8,7 +8,7 @@ function usersToObj(result) {
       firstname: user.firstname,
       lastname: user.lastname,
       username: user.username,
-      avatar: user.avatar,
+      avatar: user.avatar
     };
   });
   return users;
@@ -44,11 +44,7 @@ module.exports = class User {
 
   static async getByCredentials(username, pwd) {
     const sql =
-      "select *" +
-      "    from user" +
-      "    where" +
-      "      username = ? and" +
-      "      pwd = ?";
+      "select *" + "    from user" + "    where" + "      username = ? and" + "      pwd = ?";
 
     const values = [username, pwd];
 
@@ -58,7 +54,7 @@ module.exports = class User {
 
   static async getByIds(ids) {
     let values = new Array(0);
-    let sql = `select * from user`;
+    let sql = `select *a from user`;
 
     if (ids) {
       const condition = helper.paramsToSqlCondition("user", ids);
