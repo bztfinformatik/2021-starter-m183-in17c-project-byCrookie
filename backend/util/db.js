@@ -1,18 +1,24 @@
 const mysql = require("mysql2");
+const logger = require("./log/logger");
 
 const connectionPool = mysql.createPool({
   host: process.env.NODE_DBHOST,
   user: process.env.NODE_DBUSER,
   database: process.env.NODE_DBSCHEMA,
-  password: process.env.NODE_DBPWD,
+  password: process.env.NODE_DBPWD
 });
 
 async function execute(sql, values, connection) {
-    const formatedSql = connection.format(sql, values);
-    const result = await connection.execute(formatedSql);
-    return result;
+  const formatedSql = connection.format(sql, values);
+  const result = await connection.execute(formatedSql);
+  logger.debug({
+    sql: sql,
+    values: values,
+    query: formatedSql,
+    result: result[0]
+  });
+  return result;
 }
-
 
 async function get(stmt) {
   const connection = connectionPool.promise();
