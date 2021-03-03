@@ -11,6 +11,10 @@ router.get("/users", userCtrl.getUsers);
 router.post("/user", userCtrl.addUser);
 router.get("/users/:ids", userCtrl.getUsers);
 
+// Posting
+router.get("/postings", postingCtrl.getPostings);
+router.get("/postings/:ids", postingCtrl.getPostings);
+
 // Main
 router.get("/", mainCtrl.doNothing);
 

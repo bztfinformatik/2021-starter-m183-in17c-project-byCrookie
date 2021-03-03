@@ -808,3 +808,65 @@ undefined
   message: 'Endpoint not found. Redirect to /.',
   timestamp: '2021-03-03T10:31:06.439Z'
 }
+{
+  sql: 'select * from posting where (cast(posting.author_id as char(256)) = ?) and (cast(posting.parent_id as char(256)) = ?)',
+  values: [ '26', '86' ],
+  formatedSql: "select * from posting where (cast(posting.author_id as char(256)) = '26') and (cast(posting.parent_id as char(256)) = '86')",
+  result: [],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-03T11:23:33.849Z'
+}
+{
+  sql: 'select * from posting where (cast(posting.author_id as char(256)) = ?) and (cast(posting.parent_id as char(256)) = ?)',
+  values: [ '26', '86' ],
+  formatedSql: "select * from posting where (cast(posting.author_id as char(256)) = '26') and (cast(posting.parent_id as char(256)) = '86')",
+  result: [],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-03T11:24:09.851Z'
+}
+{
+  sql: 'select * from posting where (cast(posting.author_id as char(256)) = ?) and (cast(posting.parent_id as char(256)) = ?)',
+  values: [ '26', '86' ],
+  formatedSql: "select * from posting where (cast(posting.author_id as char(256)) = '26') and (cast(posting.parent_id as char(256)) = '86')",
+  result: [],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-03T11:25:38.656Z'
+}
+{
+  query: "select * from posting where posting.author_id = '26') and posting.parent_id = '86')",
+  error: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and posting.parent_id = '86')' at line 1",
+  level: 'error',
+  message: 'Error while executing sql',
+  timestamp: '2021-03-03T11:26:08.192Z'
+}
+{
+  error: Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and posting.parent_id = '86')' at line 1
+      at PromisePool.execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\mysql2\promise.js:358:22)
+      at execute_sql (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:42:29)
+      at execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:14:26)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:71:14)
+      at async Function.filter (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\posting.js:25:20)
+      at async exports.getPostings (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\posting.js:12:18) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlState: '42000',
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and posting.parent_id = '86')' at line 1",
+    statusCode: 500
+  },
+  level: 'error',
+  message: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and posting.parent_id = '86')' at line 1",
+  timestamp: '2021-03-03T11:26:08.199Z'
+}
+{
+  sql: 'select * from posting where posting.author_id = ? and posting.parent_id = ?',
+  values: [ '26', '86' ],
+  formatedSql: "select * from posting where posting.author_id = '26' and posting.parent_id = '86'",
+  result: [],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-03T11:26:22.684Z'
+}
