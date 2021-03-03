@@ -14,16 +14,31 @@ function usersToObj(result) {
   return users;
 }
 
+function objToUser(object) {
+  return {
+    firstname: object.firstname,
+    lastname: object.lastname,
+    username: object.username,
+    avatar: object.avatar,
+    pwd: object.pwd
+  };
+}
+
 module.exports = class User {
-  static async add(firstname, lastname, username, pwd, avatar) {
+  static async add(object) {
+    const user = objToUser(object);
+    if (!helper.isEmpty(User.getByUsername(user.username))) {
+      var error = new Error("User already exists");
+      throw error;
+    }
+
     const sql =
       "insert into user" +
       "    ( firstname, lastname, username, pwd, avatar)" +
       "  values" +
       "    (?, ?, ?, ?, ?)";
 
-    const values = [firstname, lastname, username, pwd, avatar];
-
+    const values = [user.firstname, user.lastname, user.username, user.pwd, user.avatar];
     await db.set([{ sql: sql, values: values }]);
   }
 
