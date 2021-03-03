@@ -10,7 +10,7 @@ const bodyParser = require("body-parser");
 // helper for concatinating paths
 const path = require("path");
 
-const logger = require("./util/log/logger");
+const logger = require("./util/log");
 
 // importing self-developed moudules
 const routes = require("./routes/main");
@@ -35,16 +35,15 @@ api.use(express.static(path.join(__dirname, "public")));
 api.use(routes);
 // fallback: redirect to / in case there is no routing match
 api.use((req, res, next) => {
-  logger.warn(`${req.url} not found. Redirect to /`);
+  logger.warn("Endpoint not found. Redirect to /.", {
+    url: req.url
+  });
   res.redirect("/");
 });
 
 // error handler sends error message as json
 api.use((err, req, res, next) => {
-  logger.error({
-    message: err.message,
-    stack: err.stack
-  });
+  logger.error(err.message, { error: err });
   res.status(err.statusCode).json({
     errorMessage: err.message
   });

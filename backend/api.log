@@ -30,3 +30,781 @@
   level: 'warn',
   timestamp: '2021-02-24T10:32:39.348Z'
 }
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:01:42.751Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:01:50.453Z'
+}
+{
+  url: '/asdf',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:02:05.929Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:02:06.185Z'
+}
+{
+  error: Error: connect ECONNREFUSED 127.0.0.1:3306
+      at PromisePool.query (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\mysql2\promise.js:340:22)
+      at Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:68:22)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:65:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\main.js:31:16) {
+    code: 'ECONNREFUSED',
+    errno: -4078,
+    sqlState: undefined,
+    sqlMessage: undefined,
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'connect ECONNREFUSED 127.0.0.1:3306',
+  timestamp: '2021-03-03T10:02:21.231Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:02:21.559Z'
+}
+{
+  error: Error: connect ECONNREFUSED 127.0.0.1:3306
+      at PromisePool.query (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\mysql2\promise.js:340:22)
+      at Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:68:22)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:65:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\main.js:31:16) {
+    code: 'ECONNREFUSED',
+    errno: -4078,
+    sqlState: undefined,
+    sqlMessage: undefined,
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'connect ECONNREFUSED 127.0.0.1:3306',
+  timestamp: '2021-03-03T10:06:27.309Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:06:27.669Z'
+}
+{
+  message: 'connect ECONNREFUSED 127.0.0.1:3306',
+  code: 'ECONNREFUSED',
+  errno: -4078,
+  sqlState: undefined,
+  sqlMessage: undefined,
+  statusCode: 500,
+  level: 'error',
+  timestamp: '2021-03-03T10:08:17.924Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:08:18.339Z'
+}
+{
+  message: 'connect ECONNREFUSED 127.0.0.1:3306',
+  code: 'ECONNREFUSED',
+  errno: -4078,
+  sqlState: undefined,
+  sqlMessage: undefined,
+  statusCode: 500,
+  level: 'error',
+  timestamp: '2021-03-03T10:08:33.061Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:08:33.446Z'
+}
+{
+  message: 'connect ECONNREFUSED 127.0.0.1:3306',
+  code: 'ECONNREFUSED',
+  errno: -4078,
+  sqlState: undefined,
+  sqlMessage: undefined,
+  statusCode: 500,
+  level: 'error',
+  timestamp: '2021-03-03T10:08:51.803Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:08:52.208Z'
+}
+{
+  message: 'connect ECONNREFUSED 127.0.0.1:3306',
+  code: 'ECONNREFUSED',
+  errno: -4078,
+  sqlState: undefined,
+  sqlMessage: undefined,
+  statusCode: 500,
+  level: 'error',
+  timestamp: '2021-03-03T10:09:08.951Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:09:09.482Z'
+}
+undefined
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:09:44.766Z'
+}
+undefined
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:09:59.200Z'
+}
+{
+  error: Error: connect ECONNREFUSED 127.0.0.1:3306
+      at PromisePool.query (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\mysql2\promise.js:340:22)
+      at Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:68:22)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:65:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\main.js:31:16) {
+    code: 'ECONNREFUSED',
+    errno: -4078,
+    sqlState: undefined,
+    sqlMessage: undefined,
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'connect ECONNREFUSED 127.0.0.1:3306',
+  timestamp: '2021-03-03T10:10:37.962Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:10:38.401Z'
+}
+{
+  query: undefined,
+  error: TypeError: connection.execute is not a function
+      at execute_sql (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:35:29)
+      at execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:14:18)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:64:14)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:65:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\main.js:31:16),
+  level: 'error',
+  message: 'Error while executing sql',
+  timestamp: '2021-03-03T10:11:14.710Z'
+}
+{
+  error: TypeError: connection.execute is not a function
+      at execute_sql (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:35:29)
+      at execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:14:18)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:64:14)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:65:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\main.js:31:16) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'connection.execute is not a function',
+  timestamp: '2021-03-03T10:11:14.727Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:11:15.185Z'
+}
+{
+  query: 'select *a from user',
+  error: Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1
+      at PromisePool.execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\mysql2\promise.js:358:22)
+      at execute_sql (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:35:29)
+      at execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:14:18)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:64:14)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:65:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\main.js:31:16) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlState: '42000',
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1"
+  },
+  level: 'error',
+  message: 'Error while executing sql',
+  timestamp: '2021-03-03T10:11:47.683Z'
+}
+{
+  error: Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1
+      at PromisePool.execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\mysql2\promise.js:358:22)
+      at execute_sql (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:35:29)
+      at execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:14:18)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:64:14)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:65:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\main.js:31:16) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlState: '42000',
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1",
+    statusCode: 500
+  },
+  level: 'error',
+  message: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1",
+  timestamp: '2021-03-03T10:11:47.704Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:11:48.053Z'
+}
+{
+  query: 'select *a from user',
+  error: Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1
+      at PromisePool.execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\mysql2\promise.js:358:22)
+      at execute_sql (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:35:29)
+      at execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:14:18)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:64:14)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:65:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\main.js:31:16) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlState: '42000',
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1"
+  },
+  level: 'error',
+  message: 'Error while executing sql',
+  timestamp: '2021-03-03T10:12:40.111Z'
+}
+{
+  error: Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1
+      at PromisePool.execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\mysql2\promise.js:358:22)
+      at execute_sql (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:35:29)
+      at execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:14:18)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:64:14)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:65:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\main.js:31:16) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlState: '42000',
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1",
+    statusCode: 500
+  },
+  level: 'error',
+  message: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1",
+  timestamp: '2021-03-03T10:12:40.131Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:12:40.533Z'
+}
+{
+  query: 'select *a from user',
+  error: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1",
+  level: 'error',
+  message: 'Error while executing sql',
+  timestamp: '2021-03-03T10:14:13.300Z'
+}
+{
+  error: Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1
+      at PromisePool.execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\mysql2\promise.js:358:22)
+      at execute_sql (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:35:29)
+      at execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:14:18)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:64:14)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:65:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\main.js:31:16) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlState: '42000',
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1",
+    statusCode: 500
+  },
+  level: 'error',
+  message: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a from user' at line 1",
+  timestamp: '2021-03-03T10:14:13.307Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:14:13.736Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:14:47.675Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:15:22.502Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:15:53.836Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:17:06.501Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:18:07.657Z'
+}
+{
+  error: TypeError: Cannot create property 'Symbol(level)' on number '5'
+      at DerivedLogger.log (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\winston\lib\winston\logger.js:208:20)
+      at execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:13:10)
+      at Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:66:20)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:65:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\main.js:31:16) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: "Cannot create property 'Symbol(level)' on number '5'",
+  timestamp: '2021-03-03T10:19:07.475Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:19:07.985Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:19:26.423Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:19:57.090Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:20:05.856Z'
+}
+{
+  sql: [],
+  values: undefined,
+  error: 'connection.execute is not a function',
+  level: 'error',
+  message: 'Error while executing prepared sql',
+  timestamp: '2021-03-03T10:23:12.106Z'
+}
+{
+  error: TypeError: connection.execute is not a function
+      at prepare_execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:24:29)
+      at execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:18:18)
+      at Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:66:20)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:65:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\main.js:31:16) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'connection.execute is not a function',
+  timestamp: '2021-03-03T10:23:12.110Z'
+}
+{
+  error: TypeError: logger.warn is not a function
+      at C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\api.js:38:10
+      at Layer.handle [as handle_request] (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\layer.js:95:5)
+      at trim_prefix (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:317:13)
+      at C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:284:7
+      at Function.process_params (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:335:12)
+      at next (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:275:10)
+      at C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:635:15
+      at next (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:260:14)
+      at Function.handle (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:174:3)
+      at router (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:47:12),
+  level: 'error',
+  message: 'logger.warn is not a function',
+  timestamp: '2021-03-03T10:23:12.501Z'
+}
+{
+  sql: [],
+  values: undefined,
+  error: 'connection.execute is not a function',
+  level: 'error',
+  message: 'Error while executing prepared sql',
+  timestamp: '2021-03-03T10:23:50.411Z'
+}
+{
+  error: TypeError: connection.execute is not a function
+      at prepare_execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:23:29)
+      at execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:17:18)
+      at Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:65:20)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:65:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\main.js:31:16) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'connection.execute is not a function',
+  timestamp: '2021-03-03T10:23:50.422Z'
+}
+{
+  error: TypeError: logger.warn is not a function
+      at C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\api.js:38:10
+      at Layer.handle [as handle_request] (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\layer.js:95:5)
+      at trim_prefix (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:317:13)
+      at C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:284:7
+      at Function.process_params (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:335:12)
+      at next (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:275:10)
+      at C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:635:15
+      at next (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:260:14)
+      at Function.handle (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:174:3)
+      at router (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:47:12),
+  level: 'error',
+  message: 'logger.warn is not a function',
+  timestamp: '2021-03-03T10:23:50.984Z'
+}
+{
+  sql: [],
+  values: undefined,
+  error: 'connection.execute is not a function',
+  level: 'error',
+  message: 'Error while executing prepared sql',
+  timestamp: '2021-03-03T10:25:37.421Z'
+}
+{
+  error: TypeError: connection.execute is not a function
+      at prepare_execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:23:29)
+      at execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:17:18)
+      at Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:65:20)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:65:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\main.js:31:16) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'connection.execute is not a function',
+  timestamp: '2021-03-03T10:25:37.428Z'
+}
+{
+  error: TypeError: logger.warn is not a function
+      at C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\api.js:38:10
+      at Layer.handle [as handle_request] (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\layer.js:95:5)
+      at trim_prefix (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:317:13)
+      at C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:284:7
+      at Function.process_params (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:335:12)
+      at next (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:275:10)
+      at C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:635:15
+      at next (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:260:14)
+      at Function.handle (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:174:3)
+      at router (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:47:12),
+  level: 'error',
+  message: 'logger.warn is not a function',
+  timestamp: '2021-03-03T10:25:37.872Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:25:49.710Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:26:56.242Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:27:52.427Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:28:05.391Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:28:28.442Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:28:47.167Z'
+}
+{
+  sql: 'select * from user',
+  values: [],
+  formatedSql: 'select * from user',
+  result: [
+    BinaryRow {
+      id: 26,
+      firstname: 'Grady',
+      lastname: 'Booch',
+      username: 'gbo@oonet.com',
+      pwd: '123',
+      avatar: 'avatar09.svg'
+    },
+    BinaryRow {
+      id: 27,
+      firstname: 'Niklaus',
+      lastname: 'Wirth',
+      username: 'nw@inf.ethz.ch',
+      pwd: '123',
+      avatar: 'avatar04.svg'
+    },
+    BinaryRow {
+      id: 28,
+      firstname: 'Dennis',
+      lastname: 'Ritchie',
+      username: 'dr@bell.org',
+      pwd: '123',
+      avatar: 'avatar05.svg'
+    },
+    BinaryRow {
+      id: 29,
+      firstname: 'Edgar',
+      lastname: 'Codd',
+      username: 'ec@oxf.edu',
+      pwd: '123',
+      avatar: 'avatar06.svg'
+    },
+    BinaryRow {
+      id: 30,
+      firstname: 'Marie',
+      lastname: 'Harrison',
+      username: 'mh@bbc.co.uk',
+      pwd: '123',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-03T10:30:20.395Z'
+}
+{
+  error: TypeError: Cannot read property '0' of undefined
+      at usersToObj (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:5:23)
+      at Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:66:12)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\main.js:31:16) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: "Cannot read property '0' of undefined",
+  timestamp: '2021-03-03T10:30:20.414Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:30:20.835Z'
+}
+{
+  sql: 'select * from user',
+  values: [],
+  formatedSql: 'select * from user',
+  result: [
+    BinaryRow {
+      id: 26,
+      firstname: 'Grady',
+      lastname: 'Booch',
+      username: 'gbo@oonet.com',
+      pwd: '123',
+      avatar: 'avatar09.svg'
+    },
+    BinaryRow {
+      id: 27,
+      firstname: 'Niklaus',
+      lastname: 'Wirth',
+      username: 'nw@inf.ethz.ch',
+      pwd: '123',
+      avatar: 'avatar04.svg'
+    },
+    BinaryRow {
+      id: 28,
+      firstname: 'Dennis',
+      lastname: 'Ritchie',
+      username: 'dr@bell.org',
+      pwd: '123',
+      avatar: 'avatar05.svg'
+    },
+    BinaryRow {
+      id: 29,
+      firstname: 'Edgar',
+      lastname: 'Codd',
+      username: 'ec@oxf.edu',
+      pwd: '123',
+      avatar: 'avatar06.svg'
+    },
+    BinaryRow {
+      id: 30,
+      firstname: 'Marie',
+      lastname: 'Harrison',
+      username: 'mh@bbc.co.uk',
+      pwd: '123',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-03T10:30:35.547Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:30:36.034Z'
+}
+{
+  sql: 'select * from user',
+  values: [],
+  formatedSql: 'select * from user',
+  result: [
+    BinaryRow {
+      id: 26,
+      firstname: 'Grady',
+      lastname: 'Booch',
+      username: 'gbo@oonet.com',
+      pwd: '123',
+      avatar: 'avatar09.svg'
+    },
+    BinaryRow {
+      id: 27,
+      firstname: 'Niklaus',
+      lastname: 'Wirth',
+      username: 'nw@inf.ethz.ch',
+      pwd: '123',
+      avatar: 'avatar04.svg'
+    },
+    BinaryRow {
+      id: 28,
+      firstname: 'Dennis',
+      lastname: 'Ritchie',
+      username: 'dr@bell.org',
+      pwd: '123',
+      avatar: 'avatar05.svg'
+    },
+    BinaryRow {
+      id: 29,
+      firstname: 'Edgar',
+      lastname: 'Codd',
+      username: 'ec@oxf.edu',
+      pwd: '123',
+      avatar: 'avatar06.svg'
+    },
+    BinaryRow {
+      id: 30,
+      firstname: 'Marie',
+      lastname: 'Harrison',
+      username: 'mh@bbc.co.uk',
+      pwd: '123',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-03T10:30:54.805Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:30:55.224Z'
+}
+{
+  sql: 'select * from user',
+  values: [],
+  formatedSql: 'select * from user',
+  result: [
+    BinaryRow {
+      id: 26,
+      firstname: 'Grady',
+      lastname: 'Booch',
+      username: 'gbo@oonet.com',
+      pwd: '123',
+      avatar: 'avatar09.svg'
+    },
+    BinaryRow {
+      id: 27,
+      firstname: 'Niklaus',
+      lastname: 'Wirth',
+      username: 'nw@inf.ethz.ch',
+      pwd: '123',
+      avatar: 'avatar04.svg'
+    },
+    BinaryRow {
+      id: 28,
+      firstname: 'Dennis',
+      lastname: 'Ritchie',
+      username: 'dr@bell.org',
+      pwd: '123',
+      avatar: 'avatar05.svg'
+    },
+    BinaryRow {
+      id: 29,
+      firstname: 'Edgar',
+      lastname: 'Codd',
+      username: 'ec@oxf.edu',
+      pwd: '123',
+      avatar: 'avatar06.svg'
+    },
+    BinaryRow {
+      id: 30,
+      firstname: 'Marie',
+      lastname: 'Harrison',
+      username: 'mh@bbc.co.uk',
+      pwd: '123',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-03T10:31:05.878Z'
+}
+{
+  url: '/favicon.ico',
+  level: 'warn',
+  message: 'Endpoint not found. Redirect to /.',
+  timestamp: '2021-03-03T10:31:06.439Z'
+}

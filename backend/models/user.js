@@ -54,7 +54,7 @@ module.exports = class User {
 
   static async getByIds(ids) {
     let values = new Array(0);
-    let sql = `select *a from user`;
+    let sql = `select * from user`;
 
     if (ids) {
       const condition = helper.paramsToSqlCondition("user", ids);

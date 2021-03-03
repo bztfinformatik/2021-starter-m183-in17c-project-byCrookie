@@ -1,5 +1,5 @@
 const mysql = require("mysql2");
-const logger = require("./log/logger");
+const logger = require("./log");
 
 const connectionPool = mysql.createPool({
   host: process.env.NODE_DBHOST,
@@ -9,23 +9,54 @@ const connectionPool = mysql.createPool({
 });
 
 async function execute(sql, values, connection) {
-  const formatedSql = connection.format(sql, values);
-  try {
-    const result = await connection.execute(formatedSql);
-    logger.debug({
+  if (logger.levels[process.env.NODE_LOGLEVEL] >= logger.levels.verbose) {
+    const formatedSql = await format(connection, sql, values);
+    const result = await execute_sql(connection, formatedSql);
+    logger.debug("Executed sql query", {
       sql: sql,
       values: values,
-      query: formatedSql,
+      formatedSql: formatedSql,
       result: result[0]
     });
     return result;
+  } else {
+    return await prepare_execute(connection, sql, values);
+  }
+}
+
+async function prepare_execute(connection, sql, values) {
+  try {
+    return await connection.execute(sql, values);
   } catch (err) {
-    logger.error({
+    logger.error("Error while executing prepared sql", {
       sql: sql,
       values: values,
+      error: err.message
+    });
+    throw err;
+  }
+}
+
+async function execute_sql(connection, formatedSql) {
+  try {
+    return await connection.execute(formatedSql);
+  } catch (err) {
+    logger.error("Error while executing sql", {
       query: formatedSql,
-      message: err.message,
-      stack: err.stack
+      error: err.message
+    });
+    throw err;
+  }
+}
+
+async function format(connection, sql, values) {
+  try {
+    return connection.format(sql, values);
+  } catch (err) {
+    logger.error("Error while preparing sql", {
+      sql: sql,
+      values: values,
+      error: err.message
     });
     throw err;
   }
