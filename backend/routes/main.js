@@ -13,6 +13,7 @@ router.get("/users/:ids", userCtrl.getUsers);
 router.post("/user/login", userCtrl.login);
 
 // Posting
+router.post("/posting", postingCtrl.addPosting);
 router.get("/postings", postingCtrl.getPostings);
 router.get("/postings/:ids", postingCtrl.getPostings);
 

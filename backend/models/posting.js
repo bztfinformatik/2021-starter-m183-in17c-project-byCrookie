@@ -19,7 +19,37 @@ function postingsToObj(result) {
   return postings;
 }
 
+function objToPosting(object) {
+  return {
+    author_id: object.author_id,
+    parent_id: object.parent_id,
+    title: object.title,
+    content: object.content,
+    timestamp: object.timestamp
+  };
+}
+
 module.exports = class Posting {
+  static async add(object) {
+    const posting = objToPosting(object);
+
+    const sql =
+      "insert into posting" +
+      "    ( author_id, parent_id, title, content, timestamp)" +
+      "  values" +
+      "    (?, ?, ?, ?, ?)";
+
+    const values = [
+      posting.author_id,
+      posting.parent_id,
+      posting.title,
+      posting.content,
+      posting.timestamp
+    ];
+
+    await db.set([{ sql: sql, values: values }]);
+  }
+
   static async filter(query) {
     const condition = helper.queryToSqlCondition("posting", query);
 
