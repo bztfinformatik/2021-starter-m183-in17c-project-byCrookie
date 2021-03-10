@@ -1,5 +1,7 @@
 const db = require("../util/db");
 const helper = require("../util/helper");
+const vote = require("./vote");
+const logger = require("../util/log");
 
 function postingsToObj(result) {
   const postings = result[0].map((posting) => {
@@ -9,7 +11,9 @@ function postingsToObj(result) {
       parent_id: posting.parent_id,
       title: posting.title,
       content: posting.content,
-      timestamp: posting.timestamp
+      timestamp: posting.timestamp,
+      upvotes: posting.upvotes,
+      downvotes: posting.downvotes
     };
   });
   return postings;
@@ -21,7 +25,9 @@ module.exports = class Posting {
 
     console.log(condition);
 
-    const sql = `select * from posting where ${condition.where}`;
+    const sql = `select *, (${vote.getUpvoteCountByPostingSql()}) as upvotes, (${vote.getDownvoteCountByPostingSql()}) as downvotes from posting where ${
+      condition.where
+    }`;
     const result = await db.get({ sql: sql, values: condition.values });
 
     return postingsToObj(result);
@@ -29,7 +35,7 @@ module.exports = class Posting {
 
   static async getByIds(ids) {
     let values = new Array(0);
-    let sql = `select * from posting`;
+    let sql = `select *, (${vote.getUpvoteCountByPostingSql()}) as upvotes, (${vote.getDownvoteCountByPostingSql()}) as downvotes from posting`;
 
     if (ids) {
       const condition = helper.paramsToSqlCondition("posting", ids);
@@ -38,19 +44,23 @@ module.exports = class Posting {
     }
 
     const result = await db.get({ sql: sql, values: values });
+
     return postingsToObj(result);
   }
 
   static async deleteByIds(ids) {
-    let rows = 0;
+    let posting_rows = 0;
+    let vote_rows = 0;
 
     if (!helper.isEmpty(ids)) {
       const condition = helper.paramsToSqlCondition("posting", ids);
       const sql = `delete from posting where ${condition.where}`;
       const values = condition.values;
-      rows = await db.set([{ sql: sql, values: values }]);
+
+      vote_rows = await vote.deleteByPostingIds(ids);
+      posting_rows = await db.set([{ sql: sql, values: values }]);
     }
 
-    return { postingsDeleted: rows };
+    return { postingsDeleted: posting_rows, votesDeleted: vote_rows };
   }
 };

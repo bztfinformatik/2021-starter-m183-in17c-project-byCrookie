@@ -22,7 +22,7 @@ module.exports = {
     }
     return {
       where: `${attrs.join(" and ")}`,
-      values: values,
+      values: values
     };
   },
 
@@ -31,7 +31,6 @@ module.exports = {
   // (assuming that the name of identifying primary key is alsways "id")
 
   paramsToSqlCondition(table, params) {
-
     let values = new Array(0);
 
     values = params.split(",");
@@ -42,6 +41,22 @@ module.exports = {
       where: `${ids.join(" or ")}`,
       values: values
     };
+  },
 
+  // values in route parameter is a list of comma separated ids (list can have one id only)
+  // converts list of ids (params) to a corresponding sql where-clause (sql search-condition)
+  // (assuming that the name of identifying primary key is alsways "id")
+
+  paramsToSqlJoinCondition(table, params) {
+    let values = new Array(0);
+
+    values = params.split(",");
+    let ids = new Array(values.length);
+    ids = ids.fill(`(cast(${table}_id as char(256)) = ?)`);
+
+    return {
+      where: `${ids.join(" or ")}`,
+      values: values
+    };
   }
 };
