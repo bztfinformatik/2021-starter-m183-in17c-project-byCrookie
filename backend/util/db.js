@@ -64,35 +64,44 @@ async function format(connection, sql, values) {
 
 async function get(stmt) {
   const connection = connectionPool.promise();
-  let result = new Array(0);
-
   try {
-    await connection.query(`start transaction`);
-    result = await execute(stmt.sql, stmt.values, connection);
-    await connection.query(`commit`);
+    await start_transaction(connection);
+    const result = await execute(stmt.sql, stmt.values, connection);
+    await commit_transaction(connection);
     return result;
   } catch (err) {
-    await connection.query(`rollback`);
+    await rollback_transaction(connection);
     throw err;
   }
 }
 
 async function set(stmts) {
   const connection = connectionPool.promise();
-  let affectedRows = 0;
-
   try {
-    await connection.query(`start transaction`);
+    await start_transaction(connection);
+    let affectedRows = 0;
     for (const stmt of stmts) {
       const result = await execute(stmt.sql, stmt.values, connection);
       affectedRows = affectedRows + result[0].affectedRows;
     }
-    await connection.query(`commit`);
+    await commit_transaction(connection);
     return affectedRows;
   } catch (err) {
-    await connection.query(`rollback`);
+    await rollback_transaction(connection);
     throw err;
   }
+}
+
+async function start_transaction(connection) {
+  return connection.query(`start transaction`);
+}
+
+async function commit_transaction(connection) {
+  return connection.query(`commit`);
+}
+
+async function rollback_transaction(connection) {
+  return connection.query(`rollback`);
 }
 
 module.exports.get = get;

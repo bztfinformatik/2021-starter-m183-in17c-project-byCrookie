@@ -870,3 +870,510 @@ undefined
   message: 'Executed sql query',
   timestamp: '2021-03-03T11:26:22.684Z'
 }
+{
+  sql: 'select * from posting',
+  values: [],
+  formatedSql: 'select * from posting',
+  result: [
+    BinaryRow {
+      id: 86,
+      title: 'Maxime Qui Rem',
+      content: 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
+      author_id: 26,
+      parent_id: null,
+      timestamp: 2017-08-04T21:05:36.000Z
+    },
+    BinaryRow {
+      id: 87,
+      title: 'Libero Dignissimos Repellat',
+      content: 'In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.',
+      author_id: 26,
+      parent_id: null,
+      timestamp: 2018-02-01T10:00:50.000Z
+    },
+    BinaryRow {
+      id: 88,
+      title: null,
+      content: 'Tincidunt dui ut ornare lectus sit amet. Massa sed elementum tempus egestas. Et pharetra pharetra massa massa. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Tellus elementum sagittis vitae et leo duis ut diam quam. Pharetra vel turpis nunc eget lorem. Neque aliquam vestibulum morbi blandit cursus risus at ultrices. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit.',
+      author_id: 28,
+      parent_id: 87,
+      timestamp: 2018-02-01T12:27:03.000Z
+    },
+    BinaryRow {
+      id: 89,
+      title: null,
+      content: 'Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla.',
+      author_id: 30,
+      parent_id: 87,
+      timestamp: 2018-02-01T14:44:30.000Z
+    },
+    BinaryRow {
+      id: 90,
+      title: 'Assumenda Saepe Non',
+      content: 'Eu lobortis elementum nibh tellus. Arcu dictum varius duis at consectetur. Tempus urna et pharetra pharetra massa massa ultricies mi quis. Enim eu turpis egestas pretium aenean pharetra magna ac placerat. Fames ac turpis egestas maecenas pharetra. Turpis massa sed elementum tempus egestas. Consectetur libero id faucibus nisl tincidunt eget. Lorem mollis aliquam ut porttitor leo. Volutpat ac tincidunt vitae semper quis lectus nulla at volutpat.',
+      author_id: 28,
+      parent_id: null,
+      timestamp: 2018-01-30T02:51:53.000Z
+    },
+    BinaryRow {
+      id: 91,
+      title: 'recusandae est consequatur',
+      content: 'Gravida neque convallis a cras semper auctor neque vitae. Quis eleifend quam adipiscing vitae. Erat velit scelerisque in dictum non consectetur a erat. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Donec ultrices tincidunt arcu non sodales neque sodales.',
+      author_id: 28,
+      parent_id: null,
+      timestamp: 2018-02-09T01:49:36.000Z
+    },
+    BinaryRow {
+      id: 92,
+      title: 'Consequatur Itaque Nesciunt',
+      content: 'Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Dignissim enim sit amet venenatis urna cursus. Tellus molestie nunc non blandit massa enim nec dui nunc. Rhoncus est pellentesque elit ullamcorper dignissim.',
+      author_id: 30,
+      parent_id: null,
+      timestamp: 2018-02-21T11:00:20.000Z
+    },
+    BinaryRow {
+      id: 93,
+      title: null,
+      content: 'Odio aenean sed adipiscing diam donec adipiscing tristique risus.',
+      author_id: 29,
+      parent_id: 92,
+      timestamp: 2018-02-27T05:06:20.000Z
+    },
+    BinaryRow {
+      id: 94,
+      title: null,
+      content: 'Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Scelerisque fermentum dui faucibus in.',
+      author_id: 29,
+      parent_id: 92,
+      timestamp: 2018-02-27T05:06:20.000Z
+    },
+    BinaryRow {
+      id: 95,
+      title: null,
+      content: 'Et tortor at risus viverra adipiscing at. Tristique risus nec feugiat in fermentum posuere urna. Gravida rutrum quisque non tellus. Sed ullamcorper morbi tincidunt ornare massa. Odio aenean sed adipiscing diam donec adipiscing tristique risus. In nisl nisi scelerisque eu. Eu turpis egestas pretium aenean pharetra magna ac. Aliquet lectus proin nibh nisl condimentum id. Laoreet sit amet cursus sit amet dictum sit amet. Risus in hendrerit gravida rutrum.',
+      author_id: 27,
+      parent_id: 92,
+      timestamp: 2018-03-01T01:42:00.000Z
+    },
+    BinaryRow {
+      id: 96,
+      title: null,
+      content: 'Commodo quis imperdiet massa tincidunt nunc pulvinar. Tellus id interdum velit laoreet id. Iaculis nunc sed augue lacus viverra vitae congue eu. Penatibus et magnis dis parturient montes nascetur. Interdum velit euismod in pellentesque. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Odio ut enim blandit volutpat maecenas volutpat. Mattis nunc sed blandit libero volutpat. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. In iaculis nunc sed augue. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet.',
+      author_id: 29,
+      parent_id: 95,
+      timestamp: 2018-03-02T21:30:11.000Z
+    },
+    BinaryRow {
+      id: 97,
+      title: null,
+      content: 'Tincidunt tortor aliquam nulla facilisi. Imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor. Ut porttitor leo a diam. Tincidunt ornare massa eget egestas purus.',
+      author_id: 29,
+      parent_id: 95,
+      timestamp: 2018-03-03T11:15:07.000Z
+    },
+    BinaryRow {
+      id: 98,
+      title: null,
+      content: 'Auctor eu augue ut lectus. Purus in mollis nunc sed id semper risus. At urna condimentum mattis pellentesque id nibh tortor id aliquet. Diam donec adipiscing tristique risus nec feugiat in.',
+      author_id: 30,
+      parent_id: 97,
+      timestamp: 2018-03-04T15:50:13.000Z
+    },
+    BinaryRow {
+      id: 99,
+      title: null,
+      content: 'Fermentum dui faucibus in ornare quam viverra orci. Tincidunt vitae semper quis lectus nulla at.',
+      author_id: 28,
+      parent_id: 97,
+      timestamp: 2018-03-04T04:04:14.000Z
+    },
+    BinaryRow {
+      id: 100,
+      title: null,
+      content: 'Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sem viverra aliquet eget sit amet tellus. Aliquam faucibus purus in massa tempor nec feugiat nisl.',
+      author_id: 27,
+      parent_id: 97,
+      timestamp: 2018-03-05T06:17:17.000Z
+    },
+    BinaryRow {
+      id: 101,
+      title: 'Inventore Qui Explicabo',
+      content: 'Eu mi bibendum neque egestas congue. A cras semper auctor neque vitae tempus quam pellentesque.',
+      author_id: 30,
+      parent_id: null,
+      timestamp: 2018-01-17T10:14:26.000Z
+    },
+    BinaryRow {
+      id: 102,
+      title: 'Vel Alias Repellat',
+      content: 'Pharetra massa massa ultricies mi quis. Id aliquet lectus proin nibh nisl condimentum id venenatis a. Aliquet bibendum enim facilisis gravida neque convallis a cras. Scelerisque mauris pellentesque pulvinar pellentesque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Tellus mauris a diam maecenas sed enim. Tempor id eu nisl nunc.',
+      author_id: 30,
+      parent_id: null,
+      timestamp: 2017-12-11T05:15:30.000Z
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-03T11:28:03.202Z'
+}
+{
+  sql: 'select * from posting where (cast(posting.title as char(256)) = ?)',
+  values: [ 'Maxime Qui Rem' ],
+  formatedSql: "select * from posting where (cast(posting.title as char(256)) = 'Maxime Qui Rem')",
+  result: [
+    BinaryRow {
+      id: 86,
+      title: 'Maxime Qui Rem',
+      content: 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
+      author_id: 26,
+      parent_id: null,
+      timestamp: 2017-08-04T21:05:36.000Z
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-03T11:28:21.576Z'
+}
+{
+  sql: 'select * from posting',
+  values: [],
+  formatedSql: 'select * from posting',
+  result: [
+    BinaryRow {
+      id: 86,
+      title: 'Maxime Qui Rem',
+      content: 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
+      author_id: 26,
+      parent_id: null,
+      timestamp: 2017-08-04T21:05:36.000Z
+    },
+    BinaryRow {
+      id: 87,
+      title: 'Libero Dignissimos Repellat',
+      content: 'In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.',
+      author_id: 26,
+      parent_id: null,
+      timestamp: 2018-02-01T10:00:50.000Z
+    },
+    BinaryRow {
+      id: 88,
+      title: null,
+      content: 'Tincidunt dui ut ornare lectus sit amet. Massa sed elementum tempus egestas. Et pharetra pharetra massa massa. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Tellus elementum sagittis vitae et leo duis ut diam quam. Pharetra vel turpis nunc eget lorem. Neque aliquam vestibulum morbi blandit cursus risus at ultrices. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit.',
+      author_id: 28,
+      parent_id: 87,
+      timestamp: 2018-02-01T12:27:03.000Z
+    },
+    BinaryRow {
+      id: 89,
+      title: null,
+      content: 'Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla.',
+      author_id: 30,
+      parent_id: 87,
+      timestamp: 2018-02-01T14:44:30.000Z
+    },
+    BinaryRow {
+      id: 90,
+      title: 'Assumenda Saepe Non',
+      content: 'Eu lobortis elementum nibh tellus. Arcu dictum varius duis at consectetur. Tempus urna et pharetra pharetra massa massa ultricies mi quis. Enim eu turpis egestas pretium aenean pharetra magna ac placerat. Fames ac turpis egestas maecenas pharetra. Turpis massa sed elementum tempus egestas. Consectetur libero id faucibus nisl tincidunt eget. Lorem mollis aliquam ut porttitor leo. Volutpat ac tincidunt vitae semper quis lectus nulla at volutpat.',
+      author_id: 28,
+      parent_id: null,
+      timestamp: 2018-01-30T02:51:53.000Z
+    },
+    BinaryRow {
+      id: 91,
+      title: 'recusandae est consequatur',
+      content: 'Gravida neque convallis a cras semper auctor neque vitae. Quis eleifend quam adipiscing vitae. Erat velit scelerisque in dictum non consectetur a erat. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Donec ultrices tincidunt arcu non sodales neque sodales.',
+      author_id: 28,
+      parent_id: null,
+      timestamp: 2018-02-09T01:49:36.000Z
+    },
+    BinaryRow {
+      id: 92,
+      title: 'Consequatur Itaque Nesciunt',
+      content: 'Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Dignissim enim sit amet venenatis urna cursus. Tellus molestie nunc non blandit massa enim nec dui nunc. Rhoncus est pellentesque elit ullamcorper dignissim.',
+      author_id: 30,
+      parent_id: null,
+      timestamp: 2018-02-21T11:00:20.000Z
+    },
+    BinaryRow {
+      id: 93,
+      title: null,
+      content: 'Odio aenean sed adipiscing diam donec adipiscing tristique risus.',
+      author_id: 29,
+      parent_id: 92,
+      timestamp: 2018-02-27T05:06:20.000Z
+    },
+    BinaryRow {
+      id: 94,
+      title: null,
+      content: 'Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Scelerisque fermentum dui faucibus in.',
+      author_id: 29,
+      parent_id: 92,
+      timestamp: 2018-02-27T05:06:20.000Z
+    },
+    BinaryRow {
+      id: 95,
+      title: null,
+      content: 'Et tortor at risus viverra adipiscing at. Tristique risus nec feugiat in fermentum posuere urna. Gravida rutrum quisque non tellus. Sed ullamcorper morbi tincidunt ornare massa. Odio aenean sed adipiscing diam donec adipiscing tristique risus. In nisl nisi scelerisque eu. Eu turpis egestas pretium aenean pharetra magna ac. Aliquet lectus proin nibh nisl condimentum id. Laoreet sit amet cursus sit amet dictum sit amet. Risus in hendrerit gravida rutrum.',
+      author_id: 27,
+      parent_id: 92,
+      timestamp: 2018-03-01T01:42:00.000Z
+    },
+    BinaryRow {
+      id: 96,
+      title: null,
+      content: 'Commodo quis imperdiet massa tincidunt nunc pulvinar. Tellus id interdum velit laoreet id. Iaculis nunc sed augue lacus viverra vitae congue eu. Penatibus et magnis dis parturient montes nascetur. Interdum velit euismod in pellentesque. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Odio ut enim blandit volutpat maecenas volutpat. Mattis nunc sed blandit libero volutpat. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. In iaculis nunc sed augue. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet.',
+      author_id: 29,
+      parent_id: 95,
+      timestamp: 2018-03-02T21:30:11.000Z
+    },
+    BinaryRow {
+      id: 97,
+      title: null,
+      content: 'Tincidunt tortor aliquam nulla facilisi. Imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor. Ut porttitor leo a diam. Tincidunt ornare massa eget egestas purus.',
+      author_id: 29,
+      parent_id: 95,
+      timestamp: 2018-03-03T11:15:07.000Z
+    },
+    BinaryRow {
+      id: 98,
+      title: null,
+      content: 'Auctor eu augue ut lectus. Purus in mollis nunc sed id semper risus. At urna condimentum mattis pellentesque id nibh tortor id aliquet. Diam donec adipiscing tristique risus nec feugiat in.',
+      author_id: 30,
+      parent_id: 97,
+      timestamp: 2018-03-04T15:50:13.000Z
+    },
+    BinaryRow {
+      id: 99,
+      title: null,
+      content: 'Fermentum dui faucibus in ornare quam viverra orci. Tincidunt vitae semper quis lectus nulla at.',
+      author_id: 28,
+      parent_id: 97,
+      timestamp: 2018-03-04T04:04:14.000Z
+    },
+    BinaryRow {
+      id: 100,
+      title: null,
+      content: 'Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sem viverra aliquet eget sit amet tellus. Aliquam faucibus purus in massa tempor nec feugiat nisl.',
+      author_id: 27,
+      parent_id: 97,
+      timestamp: 2018-03-05T06:17:17.000Z
+    },
+    BinaryRow {
+      id: 101,
+      title: 'Inventore Qui Explicabo',
+      content: 'Eu mi bibendum neque egestas congue. A cras semper auctor neque vitae tempus quam pellentesque.',
+      author_id: 30,
+      parent_id: null,
+      timestamp: 2018-01-17T10:14:26.000Z
+    },
+    BinaryRow {
+      id: 102,
+      title: 'Vel Alias Repellat',
+      content: 'Pharetra massa massa ultricies mi quis. Id aliquet lectus proin nibh nisl condimentum id venenatis a. Aliquet bibendum enim facilisis gravida neque convallis a cras. Scelerisque mauris pellentesque pulvinar pellentesque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Tellus mauris a diam maecenas sed enim. Tempor id eu nisl nunc.',
+      author_id: 30,
+      parent_id: null,
+      timestamp: 2017-12-11T05:15:30.000Z
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-03T11:30:35.820Z'
+}
+{
+  sql: 'select * from posting where (cast(posting.author_id as char(256)) = ?)',
+  values: [ '26' ],
+  formatedSql: "select * from posting where (cast(posting.author_id as char(256)) = '26')",
+  result: [
+    BinaryRow {
+      id: 86,
+      title: 'Maxime Qui Rem',
+      content: 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
+      author_id: 26,
+      parent_id: null,
+      timestamp: 2017-08-04T21:05:36.000Z
+    },
+    BinaryRow {
+      id: 87,
+      title: 'Libero Dignissimos Repellat',
+      content: 'In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.',
+      author_id: 26,
+      parent_id: null,
+      timestamp: 2018-02-01T10:00:50.000Z
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-03T11:30:46.387Z'
+}
+{
+  sql: 'select * from posting where (cast(posting.author_id as char(256)) = ?) and (cast(posting.id as char(256)) = ?)',
+  values: [ '26', '26' ],
+  formatedSql: "select * from posting where (cast(posting.author_id as char(256)) = '26') and (cast(posting.id as char(256)) = '26')",
+  result: [],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-03T11:31:00.982Z'
+}
+{
+  sql: 'select * from posting where (cast(posting.author_id as char(256)) = ?)',
+  values: [ '26' ],
+  formatedSql: "select * from posting where (cast(posting.author_id as char(256)) = '26')",
+  result: [
+    BinaryRow {
+      id: 86,
+      title: 'Maxime Qui Rem',
+      content: 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
+      author_id: 26,
+      parent_id: null,
+      timestamp: 2017-08-04T21:05:36.000Z
+    },
+    BinaryRow {
+      id: 87,
+      title: 'Libero Dignissimos Repellat',
+      content: 'In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.',
+      author_id: 26,
+      parent_id: null,
+      timestamp: 2018-02-01T10:00:50.000Z
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-03T11:31:08.288Z'
+}
+{
+  sql: 'select * from posting where (cast(posting.author_id as char(256)) = ?) and (cast(posting.id as char(256)) = ?)',
+  values: [ '26', '86' ],
+  formatedSql: "select * from posting where (cast(posting.author_id as char(256)) = '26') and (cast(posting.id as char(256)) = '86')",
+  result: [
+    BinaryRow {
+      id: 86,
+      title: 'Maxime Qui Rem',
+      content: 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
+      author_id: 26,
+      parent_id: null,
+      timestamp: 2017-08-04T21:05:36.000Z
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-03T11:31:18.783Z'
+}
+{
+  error: ReferenceError: connection is not defined
+      at rollback_transaction (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:104:3)
+      at Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:74:11)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:80:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\user.js:9:16) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'connection is not defined',
+  timestamp: '2021-03-10T09:36:42.564Z'
+}
+{
+  error: ReferenceError: connection is not defined
+      at rollback_transaction (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:104:3)
+      at Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:73:11)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:80:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\user.js:9:16) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'connection is not defined',
+  timestamp: '2021-03-10T09:38:51.262Z'
+}
+{
+  error: Error: connect ECONNREFUSED 127.0.0.1:3306
+      at PromisePool.query (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\mysql2\promise.js:340:22)
+      at rollback_transaction (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:104:21)
+      at Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:73:11)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:80:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\user.js:9:16) {
+    code: 'ECONNREFUSED',
+    errno: -4078,
+    sqlState: undefined,
+    sqlMessage: undefined,
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'connect ECONNREFUSED 127.0.0.1:3306',
+  timestamp: '2021-03-10T09:40:44.159Z'
+}
+{
+  error: Error: connect ECONNREFUSED 127.0.0.1:3306
+      at PromisePool.query (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\mysql2\promise.js:340:22)
+      at rollback_transaction (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:104:21)
+      at Object.get (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:73:11)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Function.getByIds (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:80:20)
+      at async exports.getUsers (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\user.js:9:16) {
+    code: 'ECONNREFUSED',
+    errno: -4078,
+    sqlState: undefined,
+    sqlMessage: undefined,
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'connect ECONNREFUSED 127.0.0.1:3306',
+  timestamp: '2021-03-10T09:40:45.674Z'
+}
+{
+  sql: 'select * from user',
+  values: [],
+  formatedSql: 'select * from user',
+  result: [
+    BinaryRow {
+      id: 26,
+      firstname: 'Grady',
+      lastname: 'Booch',
+      username: 'gbo@oonet.com',
+      pwd: '123',
+      avatar: 'avatar09.svg'
+    },
+    BinaryRow {
+      id: 27,
+      firstname: 'Niklaus',
+      lastname: 'Wirth',
+      username: 'nw@inf.ethz.ch',
+      pwd: '123',
+      avatar: 'avatar04.svg'
+    },
+    BinaryRow {
+      id: 28,
+      firstname: 'Dennis',
+      lastname: 'Ritchie',
+      username: 'dr@bell.org',
+      pwd: '123',
+      avatar: 'avatar05.svg'
+    },
+    BinaryRow {
+      id: 29,
+      firstname: 'Edgar',
+      lastname: 'Codd',
+      username: 'ec@oxf.edu',
+      pwd: '123',
+      avatar: 'avatar06.svg'
+    },
+    BinaryRow {
+      id: 30,
+      firstname: 'Marie',
+      lastname: 'Harrison',
+      username: 'mh@bbc.co.uk',
+      pwd: '123',
+      avatar: 'avatar01.svg'
+    },
+    BinaryRow {
+      id: 35,
+      firstname: 'James',
+      lastname: 'Bond',
+      username: 'james.bond@mi6.net',
+      pwd: '007',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T09:41:15.186Z'
+}
