@@ -1,3 +1,5 @@
+const bcrypt = require("bcrypt");
+
 module.exports = {
   // object "obj" is empty or null return true, return false in all other cases
   isEmpty(obj) {
@@ -58,5 +60,19 @@ module.exports = {
       where: `${ids.join(" or ")}`,
       values: values
     };
+  },
+
+  async hash(plain_password) {
+    return await bcrypt.hash(plain_password, 10);
+  },
+
+  async compare_hash(plain_password, hashed_password) {
+    return await bcrypt.compare(plain_password, hashed_password);
+  },
+
+  hasRequiredFields(dto, fields) {
+    return !Object.keys(dto)
+      .map((key) => fields.includes(key))
+      .filter((value) => !value).length;
   }
 };

@@ -10,6 +10,7 @@ const router = express.Router();
 router.get("/users", userCtrl.getUsers);
 router.post("/user", userCtrl.addUser);
 router.get("/users/:ids", userCtrl.getUsers);
+router.post("/user/login", userCtrl.login);
 
 // Posting
 router.get("/postings", postingCtrl.getPostings);

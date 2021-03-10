@@ -8,7 +8,8 @@ function usersToObj(result) {
       firstname: user.firstname,
       lastname: user.lastname,
       username: user.username,
-      avatar: user.avatar
+      avatar: user.avatar,
+      pwd: user.pwd
     };
   });
   return users;
@@ -27,7 +28,7 @@ function objToUser(object) {
 module.exports = class User {
   static async add(object) {
     const user = objToUser(object);
-    if (!helper.isEmpty(User.getByUsername(user.username))) {
+    if (!helper.isEmpty(await User.getByUsername(user.username))) {
       var error = new Error("User already exists");
       throw error;
     }
@@ -38,7 +39,14 @@ module.exports = class User {
       "  values" +
       "    (?, ?, ?, ?, ?)";
 
-    const values = [user.firstname, user.lastname, user.username, user.pwd, user.avatar];
+    const values = [
+      user.firstname,
+      user.lastname,
+      user.username,
+      await helper.hash(user.pwd),
+      user.avatar
+    ];
+
     await db.set([{ sql: sql, values: values }]);
   }
 
@@ -54,7 +62,7 @@ module.exports = class User {
   static async getByUsername(username) {
     const sql = "select * from user where username = ?";
     const result = await db.get({ sql: sql, values: [username] });
-    return usersToObj(result);
+    return usersToObj(result)[0];
   }
 
   static async getByCredentials(username, pwd) {

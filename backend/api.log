@@ -5407,3 +5407,675 @@ undefined
   message: 'Executed sql query',
   timestamp: '2021-03-10T10:49:12.136Z'
 }
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'muster' ],
+  formatedSql: "select * from user where username = 'muster'",
+  result: [],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:06:10.743Z'
+}
+{
+  error: { statusCode: 401 },
+  level: 'error',
+  message: undefined,
+  timestamp: '2021-03-10T11:06:10.757Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'muster' ],
+  formatedSql: "select * from user where username = 'muster'",
+  result: [],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:07:11.678Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'muster' ],
+  formatedSql: "select * from user where username = 'muster'",
+  result: [],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:07:22.329Z'
+}
+{
+  error: { statusCode: 401 },
+  level: 'error',
+  message: undefined,
+  timestamp: '2021-03-10T11:07:22.340Z'
+}
+{
+  error: Error: User already exists
+      at Function.add (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:31:19)
+      at exports.addUser (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\user.js:30:31)
+      at Layer.handle [as handle_request] (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\layer.js:95:5)
+      at next (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\route.js:137:13)
+      at Route.dispatch (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\route.js:112:3)
+      at Layer.handle [as handle_request] (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\layer.js:95:5)
+      at C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:281:22
+      at Function.process_params (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:335:12)
+      at next (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:275:10)
+      at Function.handle (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:174:3) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'User already exists',
+  timestamp: '2021-03-10T11:08:56.522Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:08:56.640Z'
+}
+{
+  sql: 'select * from user',
+  values: [],
+  formatedSql: 'select * from user',
+  result: [
+    BinaryRow {
+      id: 26,
+      firstname: 'Grady',
+      lastname: 'Booch',
+      username: 'gbo@oonet.com',
+      pwd: '123',
+      avatar: 'avatar09.svg'
+    },
+    BinaryRow {
+      id: 27,
+      firstname: 'Niklaus',
+      lastname: 'Wirth',
+      username: 'nw@inf.ethz.ch',
+      pwd: '123',
+      avatar: 'avatar04.svg'
+    },
+    BinaryRow {
+      id: 28,
+      firstname: 'Dennis',
+      lastname: 'Ritchie',
+      username: 'dr@bell.org',
+      pwd: '123',
+      avatar: 'avatar05.svg'
+    },
+    BinaryRow {
+      id: 29,
+      firstname: 'Edgar',
+      lastname: 'Codd',
+      username: 'ec@oxf.edu',
+      pwd: '123',
+      avatar: 'avatar06.svg'
+    },
+    BinaryRow {
+      id: 30,
+      firstname: 'Marie',
+      lastname: 'Harrison',
+      username: 'mh@bbc.co.uk',
+      pwd: '123',
+      avatar: 'avatar01.svg'
+    },
+    BinaryRow {
+      id: 35,
+      firstname: 'James',
+      lastname: 'Bond',
+      username: 'james.bond@mi6.net',
+      pwd: '007',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:09:07.562Z'
+}
+{
+  error: Error: User already exists
+      at Function.add (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:31:19)
+      at exports.addUser (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\user.js:30:31)
+      at Layer.handle [as handle_request] (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\layer.js:95:5)
+      at next (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\route.js:137:13)
+      at Route.dispatch (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\route.js:112:3)
+      at Layer.handle [as handle_request] (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\layer.js:95:5)
+      at C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:281:22
+      at Function.process_params (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:335:12)
+      at next (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:275:10)
+      at Function.handle (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\express\lib\router\index.js:174:3) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'User already exists',
+  timestamp: '2021-03-10T11:09:14.601Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:09:14.611Z'
+}
+{
+  sql: 'select * from user',
+  values: [],
+  formatedSql: 'select * from user',
+  result: [
+    BinaryRow {
+      id: 26,
+      firstname: 'Grady',
+      lastname: 'Booch',
+      username: 'gbo@oonet.com',
+      pwd: '123',
+      avatar: 'avatar09.svg'
+    },
+    BinaryRow {
+      id: 27,
+      firstname: 'Niklaus',
+      lastname: 'Wirth',
+      username: 'nw@inf.ethz.ch',
+      pwd: '123',
+      avatar: 'avatar04.svg'
+    },
+    BinaryRow {
+      id: 28,
+      firstname: 'Dennis',
+      lastname: 'Ritchie',
+      username: 'dr@bell.org',
+      pwd: '123',
+      avatar: 'avatar05.svg'
+    },
+    BinaryRow {
+      id: 29,
+      firstname: 'Edgar',
+      lastname: 'Codd',
+      username: 'ec@oxf.edu',
+      pwd: '123',
+      avatar: 'avatar06.svg'
+    },
+    BinaryRow {
+      id: 30,
+      firstname: 'Marie',
+      lastname: 'Harrison',
+      username: 'mh@bbc.co.uk',
+      pwd: '123',
+      avatar: 'avatar01.svg'
+    },
+    BinaryRow {
+      id: 35,
+      firstname: 'James',
+      lastname: 'Bond',
+      username: 'james.bond@mi6.net',
+      pwd: '007',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:10:30.558Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:10:35.117Z'
+}
+{
+  error: Error: User already exists
+      at Function.add (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:31:19)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async exports.addUser (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\user.js:30:20) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'User already exists',
+  timestamp: '2021-03-10T11:10:35.122Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:12:19.628Z'
+}
+{
+  query: "insert into user    ( firstname, lastname, username, pwd, avatar)  values    ('alpha', 'alpha', 'alpha@gmail.com', , 'avatar01.svg')",
+  error: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'avatar01.svg')' at line 1",
+  level: 'error',
+  message: 'Error while executing sql',
+  timestamp: '2021-03-10T11:12:19.668Z'
+}
+{
+  error: Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'avatar01.svg')' at line 1
+      at PromisePool.execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\mysql2\promise.js:358:22)
+      at execute_sql (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:42:29)
+      at execute (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:14:26)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at async Object.set (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\db.js:84:22)
+      at async Function.add (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\models\user.js:49:5)
+      at async exports.addUser (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\user.js:30:20) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlState: '42000',
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'avatar01.svg')' at line 1",
+    statusCode: 500
+  },
+  level: 'error',
+  message: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'avatar01.svg')' at line 1",
+  timestamp: '2021-03-10T11:12:19.673Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:12:51.038Z'
+}
+{
+  sql: 'insert into user    ( firstname, lastname, username, pwd, avatar)  values    (?, ?, ?, ?, ?)',
+  values: [
+    'alpha',
+    'alpha',
+    'alpha@gmail.com',
+    '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+    'avatar01.svg'
+  ],
+  formatedSql: "insert into user    ( firstname, lastname, username, pwd, avatar)  values    ('alpha', 'alpha', 'alpha@gmail.com', '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu', 'avatar01.svg')",
+  result: ResultSetHeader {
+    fieldCount: 0,
+    affectedRows: 1,
+    insertId: 36,
+    info: '',
+    serverStatus: 3,
+    warningStatus: 0
+  },
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:12:51.196Z'
+}
+{
+  sql: 'select * from user',
+  values: [],
+  formatedSql: 'select * from user',
+  result: [
+    BinaryRow {
+      id: 26,
+      firstname: 'Grady',
+      lastname: 'Booch',
+      username: 'gbo@oonet.com',
+      pwd: '123',
+      avatar: 'avatar09.svg'
+    },
+    BinaryRow {
+      id: 27,
+      firstname: 'Niklaus',
+      lastname: 'Wirth',
+      username: 'nw@inf.ethz.ch',
+      pwd: '123',
+      avatar: 'avatar04.svg'
+    },
+    BinaryRow {
+      id: 28,
+      firstname: 'Dennis',
+      lastname: 'Ritchie',
+      username: 'dr@bell.org',
+      pwd: '123',
+      avatar: 'avatar05.svg'
+    },
+    BinaryRow {
+      id: 29,
+      firstname: 'Edgar',
+      lastname: 'Codd',
+      username: 'ec@oxf.edu',
+      pwd: '123',
+      avatar: 'avatar06.svg'
+    },
+    BinaryRow {
+      id: 30,
+      firstname: 'Marie',
+      lastname: 'Harrison',
+      username: 'mh@bbc.co.uk',
+      pwd: '123',
+      avatar: 'avatar01.svg'
+    },
+    BinaryRow {
+      id: 35,
+      firstname: 'James',
+      lastname: 'Bond',
+      username: 'james.bond@mi6.net',
+      pwd: '007',
+      avatar: 'avatar01.svg'
+    },
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:12:56.614Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:13:22.229Z'
+}
+{
+  error: Error: data and hash arguments required
+      at Object.compare (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\bcrypt.js:208:17)
+      at C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\promises.js:29:12
+      at new Promise (<anonymous>)
+      at Object.module.exports.promise (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\promises.js:20:12)
+      at Object.compare (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\bcrypt.js:204:25)
+      at Object.compare_hash (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\helper.js:70:25)
+      at exports.login (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\user.js:43:31)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'data and hash arguments required',
+  timestamp: '2021-03-10T11:13:22.243Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:15:02.432Z'
+}
+{
+  error: Error: cb must be a function or null to return a Promise
+      at Object.compare (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\bcrypt.js:200:32)
+      at Object.compare_hash (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\helper.js:70:25)
+      at exports.login (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\user.js:43:31)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'cb must be a function or null to return a Promise',
+  timestamp: '2021-03-10T11:15:02.449Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:15:55.933Z'
+}
+{
+  error: Error: data and hash arguments required
+      at Object.compare (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\bcrypt.js:208:17)
+      at C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\promises.js:29:12
+      at new Promise (<anonymous>)
+      at Object.module.exports.promise (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\promises.js:20:12)
+      at Object.compare (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\bcrypt.js:204:25)
+      at Object.compare_hash (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\helper.js:70:25)
+      at exports.login (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\user.js:43:31)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'data and hash arguments required',
+  timestamp: '2021-03-10T11:15:55.945Z'
+}
+{
+  sql: 'select * from user',
+  values: [],
+  formatedSql: 'select * from user',
+  result: [
+    BinaryRow {
+      id: 26,
+      firstname: 'Grady',
+      lastname: 'Booch',
+      username: 'gbo@oonet.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar09.svg'
+    },
+    BinaryRow {
+      id: 27,
+      firstname: 'Niklaus',
+      lastname: 'Wirth',
+      username: 'nw@inf.ethz.ch',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar04.svg'
+    },
+    BinaryRow {
+      id: 28,
+      firstname: 'Dennis',
+      lastname: 'Ritchie',
+      username: 'dr@bell.org',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar05.svg'
+    },
+    BinaryRow {
+      id: 29,
+      firstname: 'Edgar',
+      lastname: 'Codd',
+      username: 'ec@oxf.edu',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar06.svg'
+    },
+    BinaryRow {
+      id: 30,
+      firstname: 'Marie',
+      lastname: 'Harrison',
+      username: 'mh@bbc.co.uk',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    },
+    BinaryRow {
+      id: 35,
+      firstname: 'James',
+      lastname: 'Bond',
+      username: 'james.bond@mi6.net',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    },
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:17:49.939Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:17:55.151Z'
+}
+{
+  error: Error: data and hash arguments required
+      at Object.compare (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\bcrypt.js:208:17)
+      at C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\promises.js:29:12
+      at new Promise (<anonymous>)
+      at Object.module.exports.promise (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\promises.js:20:12)
+      at Object.compare (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\bcrypt.js:204:25)
+      at Object.compare_hash (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\helper.js:70:25)
+      at exports.login (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\user.js:43:31)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'data and hash arguments required',
+  timestamp: '2021-03-10T11:17:55.163Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:17:56.166Z'
+}
+{
+  error: Error: data and hash arguments required
+      at Object.compare (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\bcrypt.js:208:17)
+      at C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\promises.js:29:12
+      at new Promise (<anonymous>)
+      at Object.module.exports.promise (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\promises.js:20:12)
+      at Object.compare (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\bcrypt.js:204:25)
+      at Object.compare_hash (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\helper.js:70:25)
+      at exports.login (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\user.js:43:31)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'data and hash arguments required',
+  timestamp: '2021-03-10T11:17:56.176Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:19:44.507Z'
+}
+{
+  error: Error: data and hash arguments required
+      at Object.compare (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\bcrypt.js:208:17)
+      at C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\promises.js:29:12
+      at new Promise (<anonymous>)
+      at Object.module.exports.promise (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\promises.js:20:12)
+      at Object.compare (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\bcrypt.js:204:25)
+      at Object.compare_hash (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\helper.js:70:25)
+      at exports.login (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\user.js:43:31)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'data and hash arguments required',
+  timestamp: '2021-03-10T11:19:44.524Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-10T11:20:22.514Z'
+}
+{
+  message: {
+    id: 36,
+    firstname: 'alpha',
+    lastname: 'alpha',
+    username: 'alpha@gmail.com',
+    avatar: 'avatar01.svg'
+  },
+  level: 'debug',
+  timestamp: '2021-03-10T11:20:22.526Z'
+}
+{
+  error: Error: data and hash arguments required
+      at Object.compare (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\bcrypt.js:208:17)
+      at C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\promises.js:29:12
+      at new Promise (<anonymous>)
+      at Object.module.exports.promise (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\promises.js:20:12)
+      at Object.compare (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\node_modules\bcrypt\bcrypt.js:204:25)
+      at Object.compare_hash (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\util\helper.js:70:25)
+      at exports.login (C:\Development\Schule\M183\2021-starter-m183-in17c-project-byCrookie\backend\controllers\user.js:45:31)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    statusCode: 500
+  },
+  level: 'error',
+  message: 'data and hash arguments required',
+  timestamp: '2021-03-10T11:20:22.531Z'
+}
