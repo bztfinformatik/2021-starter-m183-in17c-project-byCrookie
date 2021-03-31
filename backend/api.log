@@ -6645,3 +6645,351 @@ undefined
   message: 'Executed sql query',
   timestamp: '2021-03-10T11:28:23.227Z'
 }
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-31T08:38:15.609Z'
+}
+{
+  message: {
+    id: 36,
+    firstname: 'alpha',
+    lastname: 'alpha',
+    username: 'alpha@gmail.com',
+    avatar: 'avatar01.svg',
+    pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu'
+  },
+  level: 'debug',
+  timestamp: '2021-03-31T08:38:15.625Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-31T08:38:54.944Z'
+}
+{
+  message: {
+    id: 36,
+    firstname: 'alpha',
+    lastname: 'alpha',
+    username: 'alpha@gmail.com',
+    avatar: 'avatar01.svg',
+    pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu'
+  },
+  level: 'debug',
+  timestamp: '2021-03-31T08:38:54.953Z'
+}
+{
+  error: { statusCode: 401 },
+  level: 'error',
+  message: undefined,
+  timestamp: '2021-03-31T08:38:55.076Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-31T08:39:01.232Z'
+}
+{
+  message: {
+    id: 36,
+    firstname: 'alpha',
+    lastname: 'alpha',
+    username: 'alpha@gmail.com',
+    avatar: 'avatar01.svg',
+    pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu'
+  },
+  level: 'debug',
+  timestamp: '2021-03-31T08:39:01.244Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-31T08:40:34.066Z'
+}
+{
+  message: {
+    id: 36,
+    firstname: 'alpha',
+    lastname: 'alpha',
+    username: 'alpha@gmail.com',
+    avatar: 'avatar01.svg',
+    pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu'
+  },
+  level: 'debug',
+  timestamp: '2021-03-31T08:40:34.078Z'
+}
+{
+  error: { statusCode: 401, errorMessage: 'Authentication failed.' },
+  level: 'error',
+  message: undefined,
+  timestamp: '2021-03-31T08:40:34.187Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-31T08:46:03.899Z'
+}
+{
+  message: {
+    id: 36,
+    firstname: 'alpha',
+    lastname: 'alpha',
+    username: 'alpha@gmail.com',
+    avatar: 'avatar01.svg',
+    pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu'
+  },
+  level: 'debug',
+  timestamp: '2021-03-31T08:46:03.913Z'
+}
+{
+  error: { statusCode: 401 },
+  level: 'error',
+  message: undefined,
+  timestamp: '2021-03-31T08:46:04.035Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-31T08:46:34.617Z'
+}
+{
+  message: {
+    id: 36,
+    firstname: 'alpha',
+    lastname: 'alpha',
+    username: 'alpha@gmail.com',
+    avatar: 'avatar01.svg',
+    pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu'
+  },
+  level: 'debug',
+  timestamp: '2021-03-31T08:46:34.630Z'
+}
+{
+  error: { statusCode: 401 },
+  level: 'error',
+  message: undefined,
+  timestamp: '2021-03-31T08:46:34.759Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-31T08:47:14.214Z'
+}
+{
+  message: {
+    id: 36,
+    firstname: 'alpha',
+    lastname: 'alpha',
+    username: 'alpha@gmail.com',
+    avatar: 'avatar01.svg',
+    pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu'
+  },
+  level: 'debug',
+  timestamp: '2021-03-31T08:47:14.228Z'
+}
+{
+  error: { statusCode: 401, message: 'Authentication failed.' },
+  level: 'error',
+  message: 'Authentication failed.',
+  timestamp: '2021-03-31T08:47:14.361Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-31T08:47:26.610Z'
+}
+{
+  message: {
+    id: 36,
+    firstname: 'alpha',
+    lastname: 'alpha',
+    username: 'alpha@gmail.com',
+    avatar: 'avatar01.svg',
+    pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu'
+  },
+  level: 'debug',
+  timestamp: '2021-03-31T08:47:26.621Z'
+}
+{
+  error: { statusCode: 401, message: 'Authentication failed.' },
+  level: 'error',
+  message: 'Authentication failed.',
+  timestamp: '2021-03-31T08:47:26.732Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-31T08:47:38.468Z'
+}
+{
+  message: {
+    id: 36,
+    firstname: 'alpha',
+    lastname: 'alpha',
+    username: 'alpha@gmail.com',
+    avatar: 'avatar01.svg',
+    pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu'
+  },
+  level: 'debug',
+  timestamp: '2021-03-31T08:47:38.491Z'
+}
+{
+  error: { statusCode: 401, errorMessage: 'Authentication failed.' },
+  level: 'error',
+  message: undefined,
+  timestamp: '2021-03-31T08:47:38.702Z'
+}
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-03-31T08:47:47.965Z'
+}
+{
+  message: {
+    id: 36,
+    firstname: 'alpha',
+    lastname: 'alpha',
+    username: 'alpha@gmail.com',
+    avatar: 'avatar01.svg',
+    pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu'
+  },
+  level: 'debug',
+  timestamp: '2021-03-31T08:47:48.008Z'
+}
+{
+  error: { statusCode: 401, message: 'Authentication failed.' },
+  level: 'error',
+  message: 'Authentication failed.',
+  timestamp: '2021-03-31T08:47:48.240Z'
+}

@@ -45,7 +45,7 @@ exports.login = async (req, res, next) => {
     if (user && (await helper.compare_hash(req.body.pwd, user.pwd))) {
       res.status(200).json(user);
     } else {
-      next({ statusCode: 401 });
+      next({ statusCode: 401, message: "Authentication failed." });
     }
   } catch (err) {
     if (!err.statusCode) {
