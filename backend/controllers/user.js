@@ -2,6 +2,7 @@ const User = require("../models/user");
 const helper = require("../util/helper");
 const consts = require("../util/const");
 const logger = require("../util/log");
+const jwt = require("../util/token");
 
 exports.getUsers = async (req, res, next) => {
   try {
@@ -43,7 +44,7 @@ exports.login = async (req, res, next) => {
     const user = await User.getByUsername(req.body.username);
     logger.debug(user);
     if (user && (await helper.compare_hash(req.body.pwd, user.pwd))) {
-      res.status(200).json(user);
+      res.status(200).json({ jwt: jwt.sign({ userId: user.id }), user: User.objToLightUser(user) });
     } else {
       next({ statusCode: 401, message: "Authentication failed." });
     }

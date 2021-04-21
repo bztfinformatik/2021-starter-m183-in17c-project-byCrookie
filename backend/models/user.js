@@ -17,6 +17,7 @@ function usersToObj(result) {
 
 function objToUser(object) {
   return {
+    id: user.id,
     firstname: object.firstname,
     lastname: object.lastname,
     username: object.username,
@@ -26,6 +27,16 @@ function objToUser(object) {
 }
 
 module.exports = class User {
+  static objToLightUser(object) {
+    return {
+      id: object.id,
+      firstname: object.firstname,
+      lastname: object.lastname,
+      username: object.username,
+      avatar: object.avatar
+    };
+  }
+
   static async add(object) {
     const user = objToUser(object);
     if (!helper.isEmpty(await User.getByUsername(user.username))) {
