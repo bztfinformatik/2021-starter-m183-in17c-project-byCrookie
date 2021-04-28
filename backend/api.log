@@ -10270,3 +10270,104 @@ undefined
   message: 'Executed sql query',
   timestamp: '2021-04-21T10:03:23.632Z'
 }
+{
+  sql: 'select * from user where username = ?',
+  values: [ 'alpha@gmail.com' ],
+  formatedSql: "select * from user where username = 'alpha@gmail.com'",
+  result: [
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-04-21T10:18:34.562Z'
+}
+{
+  message: {
+    id: 36,
+    firstname: 'alpha',
+    lastname: 'alpha',
+    username: 'alpha@gmail.com',
+    avatar: 'avatar01.svg',
+    pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu'
+  },
+  level: 'debug',
+  timestamp: '2021-04-21T10:18:34.576Z'
+}
+{
+  message: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM2LCJpYXQiOjE2MTkwMDAzMTQsImV4cCI6MTYxOTAwNTcxNH0.O4HKTqFqGs9PwvuWfd8Z3GKmGe2iq4tbaUCbV6AOnS4',
+  level: 'debug',
+  timestamp: '2021-04-21T10:18:34.699Z'
+}
+{
+  sql: 'select * from user',
+  values: [],
+  formatedSql: 'select * from user',
+  result: [
+    BinaryRow {
+      id: 26,
+      firstname: 'Grady',
+      lastname: 'Booch',
+      username: 'gbo@oonet.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar09.svg'
+    },
+    BinaryRow {
+      id: 27,
+      firstname: 'Niklaus',
+      lastname: 'Wirth',
+      username: 'nw@inf.ethz.ch',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar04.svg'
+    },
+    BinaryRow {
+      id: 28,
+      firstname: 'Dennis',
+      lastname: 'Ritchie',
+      username: 'dr@bell.org',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar05.svg'
+    },
+    BinaryRow {
+      id: 29,
+      firstname: 'Edgar',
+      lastname: 'Codd',
+      username: 'ec@oxf.edu',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar06.svg'
+    },
+    BinaryRow {
+      id: 30,
+      firstname: 'Marie',
+      lastname: 'Harrison',
+      username: 'mh@bbc.co.uk',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    },
+    BinaryRow {
+      id: 35,
+      firstname: 'James',
+      lastname: 'Bond',
+      username: 'james.bond@mi6.net',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    },
+    BinaryRow {
+      id: 36,
+      firstname: 'alpha',
+      lastname: 'alpha',
+      username: 'alpha@gmail.com',
+      pwd: '$2b$10$gYfMzb2MJATVT8bl7RYZBOBEORPfcKREYhWIVMLJ1G/b61o528aMu',
+      avatar: 'avatar01.svg'
+    }
+  ],
+  level: 'debug',
+  message: 'Executed sql query',
+  timestamp: '2021-04-21T10:18:48.604Z'
+}
