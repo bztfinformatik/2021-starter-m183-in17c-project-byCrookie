@@ -14,17 +14,21 @@ const logger = require("./util/log");
 
 // importing self-developed moudules
 const routes = require("./routes/main");
-
+var cors = require("cors");
 const api = express();
 
 // initialize body-parser for JSON-format
-api.use(bodyParser.json());
+api.use(
+  bodyParser.json(),
+  cors({
+    origin: "http://localhost:8080"
+  })
+);
 
 // Setting response header to allow cross origin requests
 // CORS-Settings.
 api.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "GET, PUT, POST, PATCH, DELETE");
+  res.setHeader("Access-Control-Allow-Methods", "GET, PUT, POST, PATCH, DELETE, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   next();
 });

@@ -1,68 +1,49 @@
 const state = {
   jwt: null,
-  id: null,
-  username: null,
-  firstname: null,
-  lastname: null,
-  role: null,
-  avatar: null
+  user: null
 };
 
 const getters = {
   getUserFirstname() {
-    return state.firstname;
+    return state.user.firstname;
   },
   getUserLastname() {
-    return state.lastname;
+    return state.user.lastname;
   },
   getUserId() {
-    return state.id;
+    return state.user.id;
   },
   getUsername() {
-    return state.username;
+    return state.user.username;
   },
   getUserJWT() {
     return state.jwt;
   },
   getUserAvatar() {
-    return state.avatar;
+    return state.user.avatar;
   },
   getUserRole() {
-    return state.role;
+    return state.user.role;
   },
   getAuthentificationState() {
-    let authenticationState = false;
-    if (state.jwt) {
-      authenticationState = true
-    }
-    return authenticationState;
+    return state.jwt;
   }
 };
 
 const mutations = {
   unsetUser(state) {
     state.jwt = null;
-    state.username =  null;
-    state.id  = null;
-    state.firstname = null;
-    state.lastname = null;
-    state.role = null;
-    state.avatar = null;
+    state.user = null;
   },
   setUser(state, userData) {
     state.jwt = userData.jwt;
-    state.username = userData.username;
-    state.id = userData.id;
-    state.firstname = userData.firstname;
-    state.lastname = userData.lastname;
-    state.role = userData.role;
-    state.avatar = userData.avatar;
-  },
+    state.user = userData.user;
+  }
 };
 
 const actions = {
   login({ commit }, auth) {
-    return fetch("http://localhost:3000/login", {
+    return fetch("http://localhost:3000/user/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -72,30 +53,29 @@ const actions = {
         pwd: auth.pwd
       })
     })
-      .then(response => {
-        console.log("response:" + response.statusText)
+      .then((response) => {
+        console.log("response:" + response.statusText);
         if (response.status != 200) {
-          const error = new Error(response.statusText); 
+          const error = new Error(response.statusText);
           error.statusCode = response.status;
           throw error;
         } else {
-          return response.json()
+          return response.json();
         }
       })
-      .then(resbody => {
+      .then((resbody) => {
         commit("setUser", resbody);
-        commit("setAlert", {msg: "Login successful", color: "success"});
+        commit("setAlert", { msg: "Login successful", color: "success" });
       })
-      .catch(err => {
-        commit("setAlert", {msg: err.message, color: "warning"});
+      .catch((err) => {
+        commit("setAlert", { msg: err.message, color: "warning" });
       });
   }
 };
-
 
 export default {
   state,
   getters,
   mutations,
-  actions,
+  actions
 };

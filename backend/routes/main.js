@@ -17,6 +17,7 @@ router.post("/user/login", userCtrl.login);
 router.post("/posting", authorization, postingCtrl.addPosting);
 router.get("/postings", authorization, postingCtrl.getPostings);
 router.get("/postings/:ids", authorization, postingCtrl.getPostings);
+router.get("/postings/:id/postings", authorization, postingCtrl.getSubPostings);
 
 // Main
 router.get("/", mainCtrl.doNothing);

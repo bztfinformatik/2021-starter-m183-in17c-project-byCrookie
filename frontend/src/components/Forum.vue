@@ -18,12 +18,8 @@
     <v-row justify="center">
       <v-col cols="12">
         <app-postingform :parentPosting="0">
-          <template #buttonlabel>
-            Neuen Beitrag erstellen
-          </template>
-          <template #dialogtitle>
-            Neuer Beitrag
-          </template>
+          <template #buttonlabel> Neuen Beitrag erstellen </template>
+          <template #dialogtitle> Neuer Beitrag </template>
         </app-postingform>
       </v-col>
     </v-row>
@@ -33,8 +29,6 @@
 <script>
 import Posting from "@/components/Posting.vue";
 import PostingForm from "@/components/PostingForm.vue";
-
-
 
 function checkHttpStatus(res) {
   if (!res.ok) {
@@ -51,12 +45,17 @@ export default {
   async created() {
     try {
       // get all toplevel postings
-      const res = await fetch(
-        `${process.env.VUE_APP_BACKEND}/postings/null/postings`
-      );
+      const res = await fetch(`${process.env.VUE_APP_BACKEND}/postings`, {
+        method: "get",
+        headers: new Headers({
+          Authorization: `Bearer ${this.$store.getters.getUserJWT}`,
+          "Content-Type": "application/json",
+        }),
+      });
       checkHttpStatus(res);
       let result = await res.json();
-      this.postingids = result.map(result => result.id); 
+      this.postingids = result.map((result) => result.id);
+      console.log(this.postingids);
     } catch (err) {
       // display snackbar with error message
       this.$store.commit("setAlert", { msg: err.message, color: "error" });

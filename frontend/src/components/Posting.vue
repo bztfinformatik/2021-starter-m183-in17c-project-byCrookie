@@ -51,7 +51,14 @@ export default {
     try {
       // data of this posting
       const res1 = await fetch(
-        `${process.env.VUE_APP_BACKEND}/postings/${this.postingid}`
+        `${process.env.VUE_APP_BACKEND}/postings/${this.postingid}`,
+        {
+          method: "get",
+          headers: new Headers({
+            Authorization: `Bearer ${this.$store.getters.getUserJWT}`,
+            "Content-Type": "application/json",
+          }),
+        }
       );
       checkHttpStatus(res1);
       let result = await res1.json();
@@ -59,12 +66,18 @@ export default {
 
       // get id-list of subpostings
       const res2 = await fetch(
-        `${process.env.VUE_APP_BACKEND}/postings/${this.postingid}/postings`
+        `${process.env.VUE_APP_BACKEND}/postings/${this.postingid}/postings`,
+        {
+          method: "get",
+          headers: new Headers({
+            Authorization: `Bearer ${this.$store.getters.getUserJWT}`,
+            "Content-Type": "application/json",
+          }),
+        }
       );
       checkHttpStatus(res2);
       result = await res2.json();
-      this.subpostingids = result.map(result => result.id);
-
+      this.subpostingids = result.map((result) => result.id);
     } catch (err) {
       // display snackbar with error message
       this.$store.commit("setAlert", { msg: err.message, color: "error" });
@@ -89,7 +102,6 @@ export default {
     postingId() {
       return this.posting.id;
     },
-  
   },
   components: {
     "app-postingform": PostingForm,

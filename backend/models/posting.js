@@ -78,6 +78,21 @@ module.exports = class Posting {
     return postingsToObj(result);
   }
 
+  static async getSubByParentId(id) {
+    let values = new Array(0);
+    let sql = `select * from posting`;
+
+    if (id) {
+      const condition = helper.paramsToSqlFieldCondition("parent_id", id);
+      sql = `${sql} where ${condition.where}`;
+      values = condition.values;
+    }
+
+    const result = await db.get({ sql: sql, values: values });
+
+    return postingsToObj(result);
+  }
+
   static async deleteByIds(ids) {
     let posting_rows = 0;
     let vote_rows = 0;
